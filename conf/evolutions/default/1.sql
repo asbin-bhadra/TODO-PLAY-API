@@ -1,0 +1,14 @@
+-- Users schema
+
+-- !Ups
+
+CREATE TABLE Todo_Details (
+  `TODO_ID` BINARY(16) NOT NULL,
+  `TODO_TITLE` VARCHAR(45) NULL,
+  `TODO_DESCRIPTION` VARCHAR(200) NULL,
+  `STATUS` TINYINT(4) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`TODO_ID`));
+
+-- !Downs
+
+DROP TABLE Todo_Details;
